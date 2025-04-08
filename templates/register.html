@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter un utilisateur</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <h1 class="text-primary mb-4">➕ Enregistrer un nouveau visage</h1>
+        <form method="post" enctype="multipart/form-data" class="card p-4 bg-white shadow-sm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nom</label>
+                <input type="text" class="form-control" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="image" class="form-label">Photo de visage</label>
+                <input type="file" class="form-control" name="image" accept="image/*" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Enregistrer</button>
+            <a href="/dashboard" class="btn btn-secondary ms-2">Retour</a>
+        </form>
+    </div>
+</body>
+</html>
